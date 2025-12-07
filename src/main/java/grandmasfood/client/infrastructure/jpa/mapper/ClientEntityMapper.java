@@ -11,17 +11,9 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface ClientEntityMapper {
 
-    @Mapping(target = "document", source = "document")
-    @Mapping(target = "fullName", source = "fullName")
-    @Mapping(target = "email", source = "email")
-    @Mapping(target = "phone", source = "phone")
-    @Mapping(target = "deliveryAddress", source = "deliveryAddress")
+
     ClientEntity toEntity(Client client);
-    @Mapping(target = "document", source = "document")
-    @Mapping(target = "fullName", source = "fullName")
-    @Mapping(target = "email", source = "email")
-    @Mapping(target = "phone", source = "phone")
-    @Mapping(target = "deliveryAddress", source = "deliveryAddress")
+
     Client toClient(ClientEntity clientEntity);
     List<Client> toClientList(List<ClientEntity> clientEntities);
 

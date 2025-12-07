@@ -25,7 +25,6 @@ public class ClientRestController {
 
     private final IClientHandler clientHandler;
 
-    //CREATE CLIENT
     @Operation(summary = "Create a new client", description = "Endpoint for creating a new client")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Client created", content = @Content(schema = @Schema(implementation = ClientResponse.class))),
