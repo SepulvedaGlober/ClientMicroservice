@@ -6,7 +6,6 @@ import grandmasfood.client.application.dto.ClientUpdateRequest;
 import grandmasfood.client.application.mapper.ClientRequestMapper;
 import grandmasfood.client.application.mapper.ClientResponseMapper;
 import grandmasfood.client.domain.api.IClientServicePort;
-import grandmasfood.client.domain.exceptions.InvalidDocumentException;
 import grandmasfood.client.domain.models.Client;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
