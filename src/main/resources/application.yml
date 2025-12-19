@@ -3,9 +3,10 @@ server:
 
 spring:
   datasource:
-    url: ${DATABASE_URL}
-    username: ${DATABASE_USER}
-    password: ${DATABASE_PASSWORD}
+    driver-class-name: software.amazon.jdbc.Driver
+    url: jdbc:aws-wrapper:mysql://ecommerce-db.cwnqc6aiq5z8.us-east-1.rds.amazonaws.com:3306/clients?wrapperPlugins=awsSecretsManager&secretsManagerSecretId=arn:aws:secretsmanager:us-east-1:820754029757:secret:rds%21db-d762b259-c2c7-4997-b4fb-079bcf17d3f7-tvyjtZ&secretsManagerRegion=us-east-1
+    username: ${DATABASE_USER:admin}
   jpa:
     hibernate:
       ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
