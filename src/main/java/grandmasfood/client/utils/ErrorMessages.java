@@ -10,6 +10,5 @@ public class ErrorMessages {
         public static final String INVALID_EMAIL = "Invalid email";
         public static final String DUPLICATE_DOCUMENT = "Document already exists";
         public static final String INTERNAL_SERVER_ERROR = "Internal server error";
-        public static final String INVALID_DOCUMENT_CHANGE = "Document cannot be changed";
 }
 
